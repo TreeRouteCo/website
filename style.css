@@ -733,65 +733,6 @@ input[type="search"]::-webkit-search-results-decoration {
   /* Firefox */
 }
 
-.form-input:focus:focus, 
-.form-textarea:focus:focus, 
-.form-multiselect:focus:focus, 
-.form-select:focus:focus, 
-.form-checkbox:focus:focus, 
-.form-radio:focus:focus{
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(199 210 254 / var(--tw-ring-opacity));
-}
-
-.form-checkbox:focus:focus, 
-.form-radio:focus:focus{
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
-/* Hamburger button */
-
-.hamburger svg>*:nth-child(1),
-.hamburger svg>*:nth-child(2),
-.hamburger svg>*:nth-child(3) {
-  transform-origin: center;
-  transform: rotate(0deg);
-}
-
-.hamburger svg>*:nth-child(1) {
-  transition: y 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19), opacity 0.1s ease-in;
-}
-
-.hamburger svg>*:nth-child(2) {
-  transition: transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.hamburger svg>*:nth-child(3) {
-  transition: y 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19), width 0.1s 0.25s ease-in;
-}
-
-.hamburger.active svg>*:nth-child(1) {
-  opacity: 0;
-  y: 11;
-  transform: rotate(225deg);
-  transition: y 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.1s 0.12s ease-out;
-}
-
-.hamburger.active svg>*:nth-child(2) {
-  transform: rotate(225deg);
-  transition: transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.hamburger.active svg>*:nth-child(3) {
-  y: 11;
-  transform: rotate(135deg);
-  transition: y 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1), width 0.1s ease-out;
-}
-
 .pointer-events-none{
   pointer-events: none;
 }
@@ -1502,6 +1443,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .md\:h-20{
     height: 5rem;
+  }
+
+  .md\:h-10{
+    height: 2.5rem;
   }
 
   .md\:max-w-4xl{
