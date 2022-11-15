@@ -13,13 +13,25 @@
             "comment": "Matches any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link."
           },
           {
-            "/": "/buy/*",
-            "comment": "Matches any URL with a path that starts with /buy/."
+            "/": "/login-callback*",
+            "comment": "Matches any URL with a path that starts with /login-callback."
           },
           {
-            "/": "/help/website/*",
+            "/": "/location*",
+            "comment": "Matches any URL with a path that starts with /location."
+          },
+          {
+            "/": "/user*",
+            "comment": "Matches any URL with a path that starts with /user."
+          },
+          {
+            "/": "/event*",
+            "comment": "Matches any URL with a path that starts with /event."
+          },
+          {
+            "/": "/",
             "exclude": true,
-            "comment": "Matches any URL with a path that starts with /help/website/ and instructs the system not to open it as a universal link."
+            "comment": "Matches homepage, does not open for landing page."
           },
           {
             "/": "/help/*",
